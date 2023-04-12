@@ -2,10 +2,10 @@ import "./Products.scss";
 import Product from "./Product/Product";
 
 const Products = ({ products, innerPage, headingText }) => {
-  // console.log(products?.data[1].id);
+  console.log(products);
   return (
-    <div className="products-container">
-      {!innerPage && <div className="sec-heading">{headingText}</div>}
+    <div className="products-container"> 
+      {!innerPage && <div className="sec-heading">{headingText}</div>}     
       <div className="products">
         {products?.data?.map((item) => {
           console.log(item);
