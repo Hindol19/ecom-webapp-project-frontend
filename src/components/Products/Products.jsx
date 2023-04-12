@@ -8,14 +8,11 @@ const Products = ({ products, innerPage, headingText }) => {
       {!innerPage && <div className="sec-heading">{headingText}</div>}
       <div className="products">
         {products?.data?.map((item) => {
-          // console.log(item.id);
+          console.log(item);
           return (
             <Product
               id={item.id}
-              img={
-                process.env.REACT_APP_DEV_URL +
-                item.attributes.img.data[0].attributes?.url
-              }
+              img={item?.attributes?.img?.data[0]?.attributes?.url}
               price={item.attributes.price}
               name={item.attributes.title}
             />
