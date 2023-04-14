@@ -8,8 +8,8 @@ import { makePaymentRequest } from "../../utils/api";
 
 import "./Cart.scss";
 
-const Cart = () => {
-  const { cartItems, setShowCart, cartSubTotal } = useContext(Context);
+const Cart = ({ setShowCart }) => {
+  const { cartItems, cartSubTotal } = useContext(Context);
 
   const stripePromise = loadStripe(
     process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY

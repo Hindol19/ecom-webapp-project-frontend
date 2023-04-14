@@ -43,6 +43,7 @@ const Header = () => {
     } else {
       setShowCart(false);
     }
+    console.log(showCart);
   };
 
   //SEARCH MODAL:=>
@@ -54,7 +55,6 @@ const Header = () => {
     } else {
       setShowSearch(false);
     }
-    console.log(showSearch);
   };
 
   const navigate = useNavigate();
