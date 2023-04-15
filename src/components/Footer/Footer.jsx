@@ -2,7 +2,9 @@ import React from "react";
 import "./Footer.scss";
 import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";
 import Payment from "../../assets/payments.png";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -34,21 +36,45 @@ const Footer = () => {
         </div>
         <div className="col">
           <div className="title">Categories</div>
-          <span className="text">Headphones</span>
-          <span className="text">Smart Watches</span>
-          <span className="text">Bluetooth Speakers</span>
-          <span className="text">Wireless Earbuds</span>
-          <span className="text">Home Theatre</span>
-          <span className="text">Projectors</span>
+          <span className="text" onClick={() => navigate("/category/1")}>
+            Headphones
+          </span>
+          <span className="text" onClick={() => navigate("/category/3")}>
+            Smart Watches
+          </span>
+          <span className="text" onClick={() => navigate("/category/4")}>
+            Bluetooth Speakers
+          </span>
+          <span className="text" onClick={() => navigate("/category/2")}>
+            Wireless Earbuds
+          </span>
+          <span className="text" onClick={() => navigate("/unavailable")}>
+            Home Theatre
+          </span>
+          <span className="text" onClick={() => navigate("/unavailable")}>
+            Projectors
+          </span>
         </div>
         <div className="col">
           <div className="title">Pages</div>
-          <span className="text">Home</span>
-          <span className="text">About</span>
-          <span className="text">Privacy Policy</span>
-          <span className="text">Returns</span>
-          <span className="text">Terms & Conditions</span>
-          <span className="text">Contact Us</span>
+          <span className="text" onClick={() => navigate("/")}>
+            Home
+          </span>
+          <span className="text" onClick={() => navigate("/about")}>
+            About
+          </span>
+          <span className="text" onClick={() => navigate("/unavailable")}>
+            Privacy Policy
+          </span>
+          <span className="text" onClick={() => navigate("/unavailable")}>
+            Returns
+          </span>
+          <span className="text" onClick={() => navigate("/unavailable")}>
+            Terms & Conditions
+          </span>
+          <span className="text" onClick={() => navigate("/unavailable")}>
+            Contact Us
+          </span>
         </div>
       </div>
       <div className="bottom-bar">

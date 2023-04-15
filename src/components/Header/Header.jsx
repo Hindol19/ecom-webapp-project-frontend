@@ -64,15 +64,15 @@ const Header = () => {
         <div className="header-content">
           <ul className="left">
             <li onClick={() => navigate("/")}>Home</li>
-            <li>About</li>
-            <li>Categories</li>
+            <li onClick={() => navigate("/about")}>About</li>
+            <li onClick={() => navigate("/unavailable")}>Categories</li>
           </ul>
           <div className="center" onClick={() => navigate("/")}>
             MY STORE
           </div>
           <div className="right">
             <TbSearch onClick={handleClick2} />
-            <AiOutlineHeart />
+            <AiOutlineHeart onClick={() => navigate("/unavailable")} />
             <span className="cart-icon" onClick={handleClick1}>
               <CgShoppingCart />
               {!!cartCount && <span>{cartCount}</span>}
