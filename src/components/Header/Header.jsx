@@ -68,7 +68,7 @@ const Header = () => {
             <li onClick={() => navigate("/unavailable")}>Categories</li>
           </ul>
           <div className="center" onClick={() => navigate("/")}>
-            MY STORE
+            ELEVATED ELECTRONICS
           </div>
           <div className="right">
             <TbSearch onClick={handleClick2} />

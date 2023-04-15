@@ -80,8 +80,8 @@ const Footer = () => {
       <div className="bottom-bar">
         <div className="bottom-bar-content">
           <div className="text">
-            MYSTORE 2023 CREATED BY HINDOL BANERJEE. PREMIUM E-COMMERCE
-            PLATFORM.
+            ELEVATED ELECTRONICS 2023 CREATED BY HINDOL BANERJEE. PREMIUM
+            E-COMMERCE PLATFORM.
           </div>
           <img src={Payment} alt="" />
         </div>
