@@ -34,17 +34,44 @@
     }
     .about-content {
       display: flex;
-      flex-direction: row;
-      font-size: 18px;
+      flex-direction: column;
+      margin: 23px;
+      font-size: 14px;
       .left {
-        width: 50%;
-        margin-right: 20px;
+        background-color: #8d2de26d;
+        border-radius: 5px;
+        // border: 2px solid red;
+        margin: 20px 0;
+        padding: 10px;
+        margin-top: 0;
         text-align: justify;
       }
       .right {
-        width: 50%;
-        margin-left: 20px;
+        background-color: #8d2de26d;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 20px 0;
         text-align: justify;
+      }
+      @include md {
+        flex-direction: row;
+        font-size: 20px;
+        line-height: 30px;
+
+        .left {
+          padding: 20px;
+          width: 50%;
+          margin: 0;
+          margin-right: 20px;
+          text-align: justify;
+        }
+        .right {
+          padding: 20px;
+          margin: 0;
+          width: 50%;
+          margin-left: 20px;
+          text-align: justify;
+        }
       }
     }
   }

@@ -21,9 +21,7 @@ const Footer = () => {
           <div className="title">Contact</div>
           <div className="c-item">
             <FaLocationArrow />
-            <div className="text">
-              25 Ashutosh Chatterjee Lane, Mahesh, Serampore, Hooghly, 712202
-            </div>
+            <div className="text">25 Demo Lane, Demo, Demo, Demo, 123456</div>
           </div>
           <div className="c-item">
             <FaMobileAlt />

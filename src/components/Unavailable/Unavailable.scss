@@ -9,14 +9,28 @@
   .unavailable-layout {
     max-width: calc(100% - 20px);
     margin: 0 auto;
-    @include md {
-      max-width: 1200px;
+    background-color: #8d2de26d;
+    border-radius: 10px;
+    .line1 {
+      padding-bottom: 0;
     }
     h1 {
       text-align: center;
       text-transform: uppercase;
-      margin: 50px;
-      font-size: 40px;
+      margin: 0px 50px;
+      font-size: 20px;
+      padding: 20px;
+    }
+    @include md {
+      max-width: 1200px;
+      padding: 10px 30px;
+
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 50px;
+        font-size: 40px;
+      }
     }
   }
 }
